@@ -13,7 +13,7 @@ public class FileReader {
 
 
     @SneakyThrows
-    public List<File> getFileSTo(Path path) {
+    public List<File> getFilesFrom(Path path) {
         List<File> files = new ArrayList<>();
         try (Stream<Path> paths = Files.walk(path)) {
             files = paths

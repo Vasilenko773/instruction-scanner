@@ -9,7 +9,6 @@ import java.util.stream.Stream;
 
 public class InstructionCounter {
 
-
     public Integer getCountInstructionsFrom(List<File> files) {
         Integer instruction = 0;
         for (var file : files) {

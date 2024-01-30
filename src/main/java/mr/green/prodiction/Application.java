@@ -16,7 +16,7 @@ public class Application {
         Path pathToDir = Paths.get(
                 "C:\\MTC\\sales-management\\apps\\rest-api\\src\\main\\java\\ru\\mts\\salesdriver\\authentication");
 
-        List<File> files = fileReader.getFileSTo(pathToDir);
+        List<File> files = fileReader.getFilesFrom(pathToDir);
         Integer instructions = counter.getCountInstructionsFrom(files);
 
         log.info("Path {}", pathToDir.toAbsolutePath());
