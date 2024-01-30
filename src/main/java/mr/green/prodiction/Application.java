@@ -14,12 +14,13 @@ public class Application {
         FileReader fileReader = new FileReader();
         InstructionCounter counter = new InstructionCounter();
         Path pathToDir = Paths.get(
-                "C:\\MTC\\sales-management\\apps\\rest-api\\src\\main\\java\\ru\\mts\\salesdriver\\authentication");
+                "");
 
         List<File> files = fileReader.getFilesFrom(pathToDir);
         Integer instructions = counter.getCountInstructionsFrom(files);
 
         log.info("Path {}", pathToDir.toAbsolutePath());
-        log.warn("Count instruction = {}",instructions);
+        log.warn("Count files = {}", files.size());
+        log.warn("Count instruction = {}", instructions);
     }
 }
